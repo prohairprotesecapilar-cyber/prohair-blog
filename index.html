@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProHair Blog — Guias e referência sobre prótese capilar profissional</title>
+<meta name="description" content="Blog da ProHair: guias práticos, dicas técnicas e referências sobre prótese capilar profissional para barbeiros e usuários.">
+<meta property="og:title" content="ProHair Blog — Prótese capilar profissional">
+<meta property="og:description" content="Guias e referências sobre prótese capilar profissional.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg-alt: #F7F5F2;
+  --bg-warm: #FAF7EF;
+  --ink: #0E0C0A;
+  --ink-soft: #2A2620;
+  --ink-mute: #6B6358;
+  --ink-faint: #A19B90;
+  --line: #E8E4DC;
+  --line-soft: #F0EDE6;
+  --gold: #C8A055;
+  --gold-deep: #8E6F2E;
+  --gold-bright: #E0BE71;
+  --accent-bg: #FBF6E8;
+
+  --display: 'Inter Tight', system-ui, sans-serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern", "liga", "ss01";
+}
+
+a { color: inherit; text-decoration: none; }
+img, video { max-width: 100%; display: block; }
+
+/* ============================
+   PROMO BAR (topo)
+============================ */
+.promo-bar {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 12px 0;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid var(--line);
+}
+
+.promo-bar a {
+  color: var(--gold-bright);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 6px;
+}
+
+/* ============================
+   HEADER
+============================ */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--ink);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+}
+
+.brand-tag {
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.nav-main {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-main a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: 0.005em;
+  transition: color 0.2s;
+}
+
+.nav-main a:hover { color: var(--gold-deep); }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.search-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn svg { width: 18px; height: 18px; }
+
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: all 0.25s;
+}
+
+.header-cta:hover {
+  background: var(--gold-deep);
+}
+
+.header-cta svg { width: 14px; height: 14px; }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line);
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+
+/* ============================
+   HERO TRENDING
+============================ */
+.trending-section {
+  background: var(--bg);
+  padding: 56px 0 64px;
+}
+
+.trending-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.trending-main {
+  display: block;
+  cursor: pointer;
+}
+
+.trending-image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(200, 160, 85, 0.4), transparent 55%),
+    radial-gradient(circle at 75% 70%, rgba(142, 111, 46, 0.3), transparent 55%),
+    linear-gradient(135deg, #1A1612 0%, #2A2620 100%);
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trending-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+}
+
+.trending-image-label {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(14, 12, 10, 0.6);
+  backdrop-filter: blur(8px);
+  color: var(--gold-bright);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid rgba(200, 160, 85, 0.3);
+  z-index: 1;
+}
+
+.trending-category {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.trending-main h1 {
+  font-family: var(--display);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 16px;
+  transition: color 0.2s;
+}
+
+.trending-main:hover h1 {
+  color: var(--gold-deep);
+}
+
+.trending-main p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-mute);
+  margin-bottom: 24px;
+  max-width: 580px;
+}
+
+.trending-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+
+.trending-meta .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.trending-meta .author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.trending-meta .sep {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+}
+
+/* SIDE - Trending list */
+.trending-side {
+  background: var(--bg-warm);
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid var(--line-soft);
+}
+
+.trending-side-title {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  margin-bottom: 28px;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trending-side-title::before {
+  content: '';
+  width: 4px;
+  height: 22px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.trending-side-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line-soft);
+  cursor: pointer;
+}
+
+.trending-side-item:last-child {
+  border-bottom: none;
+}
+
+.trending-side-item:hover h4 {
+  color: var(--gold-deep);
+}
+
+.trending-side-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(200, 160, 85, 0.3), transparent 60%),
+    linear-gradient(135deg, var(--ink-soft), #2A2620);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.trending-side-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.trending-side-content h4 {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.trending-side-content .meta {
+  font-size: 11.5px;
+  color: var(--ink-mute);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trending-side-content .meta .sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+}
+
+/* ============================
+   CATEGORIAS (pílulas)
+============================ */
+.categories-section {
+  padding: 32px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.categories-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cat-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-right: 8px;
+}
+
+.cat-pill {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cat-pill:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.cat-pill.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+/* ============================
+   SEÇÃO: MOST POPULAR
+============================ */
+.section {
+  padding: 80px 0;
+}
+
+.section-alt { background: var(--bg-alt); }
+
+.section-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+
+.section-title {
+  font-family: var(--display);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.section-title em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
+.section-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.25s;
+}
+
+.section-link:hover { gap: 12px; }
+
+.section-link svg { width: 16px; height: 12px; }
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.post-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.post-card:hover { transform: translateY(-3px); }
+
+.post-card-img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(200, 160, 85, 0.25), transparent 55%),
+    linear-gradient(135deg, var(--ink-soft), #2A2620);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+}
+
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-bottom: 12px;
+}
+
+.post-card-meta .date {
+  font-weight: 500;
+}
+
+.post-card-meta .sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+}
+
+.post-card-meta .time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-card h3 {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+
+.post-card:hover h3 { color: var(--gold-deep); }
+
+.post-card p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.post-card-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.post-card-author-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.post-card-author span:last-child {
+  color: var(--ink-mute);
+  font-weight: 400;
+  font-size: 11.5px;
+}
+
+/* ============================
+   EXPLORE TOPICS (banners)
+============================ */
+.explore-section {
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+}
+
+.explore-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 280px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  cursor: pointer;
+  transition: transform 0.4s;
+  color: var(--bg);
+}
+
+.explore-card:hover { transform: translateY(-4px); }
+
+.explore-card.dark {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(200, 160, 85, 0.3), transparent 55%),
+    linear-gradient(135deg, var(--ink) 0%, #1A1612 100%);
+}
+
+.explore-card.gold {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 240, 200, 0.2), transparent 55%),
+    linear-gradient(135deg, var(--gold-deep) 0%, var(--gold) 100%);
+}
+
+.explore-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.explore-card > * { position: relative; z-index: 1; }
+
+.explore-card-content { width: 100%; }
+
+.explore-card-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 14px;
+}
+
+.explore-card h3 {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.explore-card p {
+  font-size: 14.5px;
+  opacity: 0.8;
+  line-height: 1.5;
+  max-width: 380px;
+}
+
+/* ============================
+   ALL ARTICLES (lista grande)
+============================ */
+.all-articles-section {
+  padding: 80px 0 120px;
+  background: var(--bg);
+}
+
+.all-articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.article-row {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.article-row:hover {
+  background: var(--bg-warm);
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.article-row-img {
+  width: 160px;
+  height: 100px;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(200, 160, 85, 0.25), transparent 55%),
+    linear-gradient(135deg, var(--ink-soft), #2A2620);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.article-row-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.article-row-content { min-width: 0; }
+
+.article-row-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-bottom: 8px;
+}
+
+.article-row-meta .cat {
+  color: var(--gold-deep);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.article-row-meta .sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+}
+
+.article-row h3 {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.article-row:hover h3 { color: var(--gold-deep); }
+
+.article-row p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-mute);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.article-row-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  transition: all 0.25s;
+  flex-shrink: 0;
+}
+
+.article-row:hover .article-row-arrow {
+  background: var(--ink);
+  color: var(--bg);
+  transform: translateX(4px);
+}
+
+.article-row-arrow svg { width: 16px; height: 16px; }
+
+/* ============================
+   PAGINATION
+============================ */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 56px;
+}
+
+.pagination button {
+  padding: 12px 20px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition: all 0.2s;
+}
+
+.pagination button:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.pagination .info {
+  font-size: 13px;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+
+/* ============================
+   CTA FINAL
+============================ */
+.cta-section {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(200, 160, 85, 0.18), transparent 60%);
+}
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.cta-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin-bottom: 32px;
+}
+
+.cta-eyebrow::before,
+.cta-eyebrow::after {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.cta-section h2 {
+  font-family: var(--display);
+  font-size: clamp(40px, 5.5vw, 72px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.028em;
+  margin-bottom: 28px;
+}
+
+.cta-section h2 em {
+  font-style: italic;
+  color: var(--gold-bright);
+  font-weight: 500;
+}
+
+.cta-section p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(245, 241, 232, 0.75);
+  margin-bottom: 44px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: inline-flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 32px;
+  background: var(--gold-bright);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 999px;
+  transition: all 0.3s;
+  border: 1px solid var(--gold-bright);
+}
+
+.btn-gold:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(200, 160, 85, 0.3);
+}
+
+.btn-outline-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 32px;
+  background: transparent;
+  color: var(--bg);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: all 0.3s;
+  border: 1px solid rgba(245, 241, 232, 0.3);
+}
+
+.btn-outline-light:hover {
+  border-color: var(--bg);
+  background: rgba(245, 241, 232, 0.08);
+}
+
+.btn-gold svg, .btn-outline-light svg { width: 16px; height: 16px; }
+
+/* ============================
+   FOOTER
+============================ */
+.site-footer {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 80px 0 32px;
+  border-top: 1px solid rgba(245, 241, 232, 0.08);
+}
+
+.footer-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 56px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(245, 241, 232, 0.1);
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-brand-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-brand-top .brand-mark {
+  background: transparent;
+  border: 1px solid rgba(245, 241, 232, 0.25);
+}
+
+.footer-brand-top .brand-name {
+  color: var(--bg);
+}
+
+.footer-brand-top .brand-tag {
+  color: rgba(245, 241, 232, 0.5);
+}
+
+.footer-pitch {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: rgba(245, 241, 232, 0.65);
+  max-width: 380px;
+}
+
+.footer-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin-bottom: 22px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: rgba(245, 241, 232, 0.7);
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover { color: var(--gold-bright); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  font-size: 12px;
+  color: rgba(245, 241, 232, 0.4);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-bottom .made {
+  font-weight: 500;
+  background: linear-gradient(135deg, #F5D061, #D4AF37, #A88629);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 13px;
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+@media (max-width: 1080px) {
+  .trending-inner { grid-template-columns: 1fr; gap: 40px; }
+  .popular-grid { grid-template-columns: repeat(2, 1fr); }
+  .explore-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 760px) {
+  .header-inner { padding: 14px 20px; gap: 12px; }
+  .nav-main { display: none; }
+  .nav-main.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 20px 20px;
+  }
+  .nav-main.open a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-soft);
+    width: 100%;
+  }
+  .menu-toggle { display: flex; }
+  .header-cta span { display: none; }
+  .header-cta { padding: 10px 14px; }
+
+  .trending-section { padding: 32px 0 48px; }
+  .trending-inner { padding: 0 20px; }
+  .trending-main h1 { font-size: 28px; }
+  .trending-side { padding: 24px; }
+  .trending-side-item { grid-template-columns: 60px 1fr; gap: 12px; padding: 14px 0; }
+  .trending-side-img { width: 60px; height: 60px; }
+
+  .categories-inner { padding: 0 20px; gap: 8px; }
+  .cat-pill { padding: 6px 14px; font-size: 12.5px; }
+
+  .section { padding: 56px 0; }
+  .section-inner { padding: 0 20px; }
+  .section-title { font-size: 26px; }
+  .popular-grid { grid-template-columns: 1fr; gap: 28px; }
+
+  .explore-section { padding: 56px 0; }
+  .explore-card { min-height: 220px; padding: 28px; }
+  .explore-card h3 { font-size: 22px; }
+
+  .all-articles-section { padding: 56px 0 72px; }
+  .article-row {
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    padding: 20px 0;
+  }
+  .article-row-img { width: 100px; height: 70px; }
+  .article-row h3 { font-size: 16px; }
+  .article-row p { display: none; }
+  .article-row-arrow { display: none; }
+
+  .cta-section { padding: 72px 0; }
+  .footer-top { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* Anim entrada */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.trending-main { animation: fadeUp 0.7s ease-out both; }
+.trending-side { animation: fadeUp 0.7s ease-out 0.15s both; }
+
+/* ============================
+   ARTIGO INDIVIDUAL
+============================ */
+.article-view { display: none; }
+.article-view.active { display: block; }
+.home-view.hidden { display: none; }
+
+.article-hero-section {
+  padding: 56px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-hero-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.article-breadcrumb {
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.article-breadcrumb a {
+  color: var(--ink-mute);
+  transition: color 0.2s;
+}
+
+.article-breadcrumb a:hover { color: var(--gold-deep); }
+
+.article-breadcrumb .sep {
+  color: var(--ink-faint);
+}
+
+.article-category-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 24px;
+}
+
+.article-h1 {
+  font-family: var(--display);
+  font-size: clamp(32px, 5.2vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.028em;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.article-dek {
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-mute);
+  margin-bottom: 36px;
+}
+
+.article-metadata {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--ink-mute);
+  flex-wrap: wrap;
+}
+
+.article-metadata .author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.article-metadata .author-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.article-metadata .sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+}
+
+.article-feature-img {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.article-feature-img .img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  margin-top: 56px;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(200, 160, 85, 0.35), transparent 55%),
+    linear-gradient(135deg, var(--ink-soft), #2A2620);
+  position: relative;
+  overflow: hidden;
+}
+
+.article-feature-img .img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.63 0 0 0 0 0.33 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.4;
+}
+
+.article-body-wrap {
+  padding: 72px 0 80px;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 32px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.article-body > * + * { margin-top: 1.2em; }
+
+.article-body p.lead {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink);
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.article-body h2 {
+  font-family: var(--display);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+  margin-top: 48px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.article-body h3 {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 32px;
+  letter-spacing: -0.012em;
+}
+
+.article-body p { margin-bottom: 1.1em; }
+
+.article-body a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  transition: all 0.2s;
+}
+
+.article-body a:hover {
+  background: var(--accent-bg);
+  border-bottom-color: transparent;
+}
+
+.article-body blockquote {
+  border-left: 3px solid var(--gold);
+  padding: 8px 0 8px 32px;
+  margin: 36px 0;
+  font-family: var(--display);
+  font-size: 22px;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.article-body ul, .article-body ol {
+  padding-left: 24px;
+  margin: 1.1em 0;
+}
+
+.article-body li {
+  margin-bottom: 0.6em;
+}
+
+.article-body li::marker {
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+
+.article-cta-block {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.article-cta-card {
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 16px;
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.article-cta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 100%, rgba(200, 160, 85, 0.35), transparent 60%);
+}
+
+.article-cta-card > * { position: relative; z-index: 1; }
+
+.article-cta-card .left h3 {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.022em;
+  margin-bottom: 12px;
+}
+
+.article-cta-card .left h3 em {
+  font-style: italic;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.article-cta-card .left p {
+  font-size: 15px;
+  color: rgba(245, 241, 232, 0.75);
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.related-section {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+  border-top: 1px solid var(--line);
+}
+
+.related-title {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.related-title em {
+  font-style: italic;
+  color: var(--gold-deep);
+  font-weight: 600;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 760px) {
+  .article-cta-card {
+    grid-template-columns: 1fr;
+    padding: 32px 28px;
+  }
+  .related-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- =========================================
+     PROMO BAR (opcional, parecido Riverside)
+========================================= -->
+<div class="promo-bar">
+  Mais de 650 próteses enviadas todo mês para barbeiros profissionais em todo o Brasil.
+  <a href="https://www.prohairprotesecapilar.com.br/" target="_blank">Conheça a loja →</a>
+</div>
+
+<!-- =========================================
+     HEADER
+========================================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="brand" onclick="showHome(); return false;">
+      <div class="brand-mark">
+        <img src="data:image/jpeg;base64,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" alt="ProHair">
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">ProHair</span>
+        <span class="brand-tag">Blog · Prótese Capilar</span>
+      </div>
+    </a>
+
+    <nav class="nav-main" id="navMain">
+      <a href="#" onclick="showHome(); return false;">Início</a>
+      <a href="#" onclick="filterCategory('barbeiros'); return false;">Para Barbeiros</a>
+      <a href="#" onclick="filterCategory('cliente'); return false;">Para Quem Usa</a>
+      <a href="#" onclick="filterCategory('negocio'); return false;">Negócio</a>
+      <a href="https://www.prohairprotesecapilar.com.br/" target="_blank">Loja</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="search-btn" onclick="alert('Em breve: busca')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a href="https://wa.me/5511938079984?text=Ol%C3%A1!%20Vim%20pelo%20blog%20da%20ProHair%20e%20quero%20fazer%20um%20or%C3%A7amento." target="_blank" class="header-cta">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Orçamento</span>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================
+     HOME
+========================================= -->
+<main class="home-view" id="homeView">
+
+  <!-- TRENDING -->
+  <section class="trending-section">
+    <div class="trending-inner">
+      <a href="#artigo-1" class="trending-main" onclick="showArticle(1); return false;">
+        <div class="trending-image">
+          <span class="trending-image-label">★ Em alta</span>
+        </div>
+        <span class="trending-category">Para Quem Usa</span>
+        <h1>Título do artigo principal em destaque — substitua aqui pelo conteúdo de capa</h1>
+        <p>Resumo enxuto e atraente do artigo principal. Cerca de 2 ou 3 linhas que ancorem o leitor sem entregar a conclusão — é o que vai fazer ele clicar.</p>
+        <div class="trending-meta">
+          <div class="author">
+            <div class="author-avatar">R</div>
+            <span>Rodolfo · ProHair</span>
+          </div>
+          <span class="sep"></span>
+          <span>15 nov 2026</span>
+          <span class="sep"></span>
+          <span>8 min de leitura</span>
+        </div>
+      </a>
+
+      <aside class="trending-side">
+        <h3 class="trending-side-title">Em alta no blog</h3>
+
+        <div class="trending-side-item" onclick="showArticle(2)">
+          <div class="trending-side-img"></div>
+          <div class="trending-side-content">
+            <h4>Título do segundo artigo em alta — clique pra editar</h4>
+            <div class="meta">
+              <span>12 nov 2026</span>
+              <span class="sep"></span>
+              <span>5 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-side-item" onclick="showArticle(3)">
+          <div class="trending-side-img"></div>
+          <div class="trending-side-content">
+            <h4>Título do terceiro artigo em alta</h4>
+            <div class="meta">
+              <span>10 nov 2026</span>
+              <span class="sep"></span>
+              <span>6 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-side-item" onclick="showArticle(4)">
+          <div class="trending-side-img"></div>
+          <div class="trending-side-content">
+            <h4>Título do quarto artigo em alta</h4>
+            <div class="meta">
+              <span>8 nov 2026</span>
+              <span class="sep"></span>
+              <span>7 min</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="categories-section">
+    <div class="categories-inner">
+      <span class="cat-label">Categorias</span>
+      <button class="cat-pill active" data-cat="all">Tudo</button>
+      <button class="cat-pill" data-cat="barbeiros">Para Barbeiros</button>
+      <button class="cat-pill" data-cat="cliente">Para Quem Usa</button>
+      <button class="cat-pill" data-cat="negocio">Negócio</button>
+      <button class="cat-pill" data-cat="cuidados">Cuidados</button>
+      <button class="cat-pill" data-cat="bases">Tipos de Base</button>
+      <button class="cat-pill" data-cat="aplicacao">Aplicação</button>
+    </div>
+  </section>
+
+  <!-- MAIS POPULARES -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Mais <em>lidos</em> esta semana</h2>
+        <a href="#" class="section-link" onclick="return false;">
+          Ver todos
+          <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h14M10 1l5 5-5 5"/></svg>
+        </a>
+      </div>
+
+      <div class="popular-grid">
+        <div class="post-card" onclick="showArticle(5)">
+          <div class="post-card-img"></div>
+          <div class="post-card-meta">
+            <span class="date">11 nov 2026</span>
+            <span class="sep"></span>
+            <span class="time">9 min</span>
+          </div>
+          <h3>Título do artigo popular um — substitua aqui</h3>
+          <p>Resumo curto e direto sobre o artigo. Mantenha em 2 linhas pra não poluir o card.</p>
+          <div class="post-card-author">
+            <div class="post-card-author-avatar">R</div>
+            <div>
+              <div>Rodolfo</div>
+              <span>ProHair</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card" onclick="showArticle(6)">
+          <div class="post-card-img"></div>
+          <div class="post-card-meta">
+            <span class="date">7 nov 2026</span>
+            <span class="sep"></span>
+            <span class="time">7 min</span>
+          </div>
+          <h3>Título do artigo popular dois — substitua aqui</h3>
+          <p>Resumo curto. Mantenha em 2 linhas no máximo pra não poluir o card.</p>
+          <div class="post-card-author">
+            <div class="post-card-author-avatar">R</div>
+            <div>
+              <div>Rodolfo</div>
+              <span>ProHair</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card" onclick="showArticle(7)">
+          <div class="post-card-img"></div>
+          <div class="post-card-meta">
+            <span class="date">3 nov 2026</span>
+            <span class="sep"></span>
+            <span class="time">12 min</span>
+          </div>
+          <h3>Título do artigo popular três — substitua aqui</h3>
+          <p>Resumo curto. Mantenha em 2 linhas no máximo pra não poluir o card.</p>
+          <div class="post-card-author">
+            <div class="post-card-author-avatar">R</div>
+            <div>
+              <div>Rodolfo</div>
+              <span>ProHair</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE TOPICS (banners) -->
+  <section class="explore-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Explore por <em>público</em></h2>
+      </div>
+
+      <div class="explore-grid">
+        <div class="explore-card dark" onclick="filterCategory('barbeiros')">
+          <div class="explore-card-content">
+            <div class="explore-card-eyebrow">Profissionais</div>
+            <h3>Para barbeiros que aplicam prótese</h3>
+            <p>Guias técnicos, dicas de aplicação, precificação e como crescer com o serviço.</p>
+          </div>
+        </div>
+
+        <div class="explore-card gold" onclick="filterCategory('cliente')">
+          <div class="explore-card-content">
+            <div class="explore-card-eyebrow">Para você</div>
+            <h3>Para quem vai começar a usar</h3>
+            <p>Informação séria, antes de tomar a decisão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODOS OS ARTIGOS -->
+  <section class="all-articles-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Todos os <em>artigos</em></h2>
+        <span class="section-link" style="cursor: default;">
+          <span id="totalArticles">12 publicações</span>
+        </span>
+      </div>
+
+      <div class="all-articles-list" id="allArticlesList">
+        <!-- Lista renderizada via JS -->
+      </div>
+
+      <div class="pagination">
+        <button>← Anterior</button>
+        <span class="info">Página 1 de 2</span>
+        <button>Próxima →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-eyebrow">A ProHair</div>
+      <h2>Pronto pra trabalhar com a <em>maior fornecedora</em> de prótese capilar do Brasil?</h2>
+      <p>Atendemos barbeiros profissionais em todo o Brasil com estoque próprio, envio no mesmo dia e suporte técnico real.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/5511938079984?text=Ol%C3%A1!%20Vim%20pelo%20blog%20da%20ProHair%20e%20quero%20fazer%20um%20or%C3%A7amento." target="_blank" class="btn-gold">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Fazer um orçamento
+        </a>
+        <a href="https://www.prohairprotesecapilar.com.br/" target="_blank" class="btn-outline-light">
+          Visitar a loja
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================
+     ARTIGO INDIVIDUAL
+========================================= -->
+<main class="article-view" id="articleView">
+  <section class="article-hero-section">
+    <div class="article-hero-inner">
+      <div class="article-breadcrumb">
+        <a href="#" onclick="showHome(); return false;">Início</a>
+        <span class="sep">›</span>
+        <a href="#" onclick="filterCategory(currentArticleCategory); return false;" id="bcCat">Categoria</a>
+        <span class="sep">›</span>
+        <span id="bcTitle">Artigo</span>
+      </div>
+
+      <span class="article-category-badge" id="articleCategory">Categoria</span>
+      <h1 class="article-h1" id="articleTitle">Título do artigo</h1>
+      <p class="article-dek" id="articleDek">Subtítulo/resumo do artigo que aparece logo abaixo do título principal.</p>
+
+      <div class="article-metadata">
+        <div class="author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div>Rodolfo</div>
+            <div style="font-size: 11.5px; color: var(--ink-mute); margin-top: 1px;">ProHair · Prótese Capilar</div>
+          </div>
+        </div>
+        <span class="sep"></span>
+        <span id="articleDate">15 de novembro de 2026</span>
+        <span class="sep"></span>
+        <span id="articleReadTime">8 min de leitura</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="article-feature-img">
+    <div class="img"></div>
+  </div>
+
+  <div class="article-body-wrap">
+    <article class="article-body">
+      <p class="lead">Lead do artigo aparece aqui. Use 2 ou 3 frases pra introduzir o tema e prender o leitor — esse parágrafo aparece com fonte maior em destaque.</p>
+
+      <p>Parágrafo regular do artigo. Substitua todo esse conteúdo pelo texto real. O blog suporta todos os elementos editoriais clássicos: parágrafos, subtítulos H2 e H3, listas, citações em destaque, e links.</p>
+
+      <h2>Este é um subtítulo H2</h2>
+
+      <p>Os H2 dividem o artigo em seções principais. Use pra organizar o conteúdo e ajudar o leitor a navegar — bom também pra SEO, porque o Google entende a hierarquia do texto.</p>
+
+      <p>Você pode escrever vários parágrafos abaixo de cada H2. <a href="#">Links</a> ficam destacados no dourado da marca.</p>
+
+      <h3>Este é um subtítulo H3</h3>
+
+      <p>O H3 é usado pra subseções dentro de uma seção H2. Use com moderação — se o artigo virar uma árvore muito complexa, considere quebrar em dois.</p>
+
+      <blockquote>Citações em destaque aparecem assim — com fonte maior, em itálico, com uma linha dourada à esquerda. Use pra ressaltar uma frase de impacto ou uma reflexão chave.</blockquote>
+
+      <p>Listas funcionam normalmente:</p>
+
+      <ul>
+        <li>Primeiro item da lista</li>
+        <li>Segundo item — bullets são ótimos pra escanear conteúdo</li>
+        <li>Terceiro item — idealmente entre 3 e 7 itens por lista</li>
+      </ul>
+
+      <h2>Outra seção do artigo</h2>
+
+      <p>Continue desenvolvendo o tema com mais blocos de texto, exemplos e referências. Artigos que rankeiam bem no Google costumam ter entre 800 e 2000 palavras.</p>
+
+      <p>Termine com uma conclusão curta — 1 ou 2 parágrafos resumindo o ponto central e indicando o próximo passo lógico pro leitor.</p>
+    </article>
+  </div>
+
+  <!-- CTA dentro do artigo -->
+  <div class="article-cta-block">
+    <div class="article-cta-card">
+      <div class="left">
+        <h3>Quer falar com a <em>ProHair</em>?</h3>
+        <p>Atendemos barbeiros profissionais de todo o Brasil. Tire suas dúvidas, peça um orçamento ou conheça nosso catálogo.</p>
+      </div>
+      <a href="https://wa.me/5511938079984?text=Ol%C3%A1!%20Vim%20pelo%20blog%20da%20ProHair%20e%20quero%20fazer%20um%20or%C3%A7amento." target="_blank" class="btn-gold">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Fazer um orçamento
+      </a>
+    </div>
+  </div>
+
+  <!-- RELACIONADOS -->
+  <section class="related-section">
+    <h2 class="related-title">Continue <em>lendo</em></h2>
+    <div class="related-grid" id="relatedGrid"></div>
+  </section>
+</main>
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <div class="brand-mark">
+            <img src="data:image/jpeg;base64,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" alt="ProHair">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">ProHair</span>
+            <span class="brand-tag">Prótese Capilar</span>
+          </div>
+        </div>
+        <p class="footer-pitch">Maior fornecedor de prótese capilar do Brasil. Excelência reconhecida, avaliação máxima no Google e um padrão de atendimento que redefine o mercado.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegar</h4>
+        <a href="#" onclick="showHome(); return false;">Início</a>
+        <a href="#" onclick="filterCategory('barbeiros'); return false;">Para Barbeiros</a>
+        <a href="#" onclick="filterCategory('cliente'); return false;">Para Quem Usa</a>
+        <a href="#" onclick="filterCategory('negocio'); return false;">Negócio</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>ProHair</h4>
+        <a href="https://www.prohairprotesecapilar.com.br/" target="_blank">Loja online</a>
+        <a href="https://link.prohairprotesecapilar.com.br/" target="_blank">Todos os links</a>
+        <a href="https://instagram.com/prohairprotesecapilar" target="_blank">Instagram</a>
+        <a href="https://wa.me/5511938079984" target="_blank">WhatsApp</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5511938079984" target="_blank">(11) 93807-9984</a>
+        <a href="https://wa.me/5511911816024" target="_blank">(11) 91181-6024</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Centro+Empresarial+Aquarius+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank">São José dos Campos / SP</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 ProHair Prótese Capilar. Todos os direitos reservados.</span>
+      <span class="made">prohairprotesecapilar.com.br</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// =========================================
+//   DADOS DOS ARTIGOS
+// =========================================
+const articles = {
+  1: { cat: 'cliente', catLabel: 'Para Quem Usa', title: 'Título do artigo principal em destaque — substitua aqui', dek: 'Resumo do artigo que aparece logo abaixo do título.', date: '15 de novembro de 2026', dateShort: '15 nov 2026', readTime: '8 min de leitura' },
+  2: { cat: 'barbeiros', catLabel: 'Para Barbeiros', title: 'Título do segundo artigo em alta — clique pra editar', dek: 'Resumo do artigo.', date: '12 de novembro de 2026', dateShort: '12 nov 2026', readTime: '5 min de leitura' },
+  3: { cat: 'cliente', catLabel: 'Para Quem Usa', title: 'Título do terceiro artigo em alta', dek: 'Resumo do artigo.', date: '10 de novembro de 2026', dateShort: '10 nov 2026', readTime: '6 min de leitura' },
+  4: { cat: 'negocio', catLabel: 'Negócio', title: 'Título do quarto artigo em alta', dek: 'Resumo do artigo.', date: '8 de novembro de 2026', dateShort: '8 nov 2026', readTime: '7 min de leitura' },
+  5: { cat: 'barbeiros', catLabel: 'Para Barbeiros', title: 'Título do artigo popular um — substitua aqui', dek: 'Resumo do artigo.', date: '11 de novembro de 2026', dateShort: '11 nov 2026', readTime: '9 min de leitura' },
+  6: { cat: 'cliente', catLabel: 'Para Quem Usa', title: 'Título do artigo popular dois — substitua aqui', dek: 'Resumo do artigo.', date: '7 de novembro de 2026', dateShort: '7 nov 2026', readTime: '7 min de leitura' },
+  7: { cat: 'negocio', catLabel: 'Negócio', title: 'Título do artigo popular três — substitua aqui', dek: 'Resumo do artigo.', date: '3 de novembro de 2026', dateShort: '3 nov 2026', readTime: '12 min de leitura' },
+  8: { cat: 'cuidados', catLabel: 'Cuidados', title: 'Título do artigo número oito — substitua aqui', dek: 'Resumo do artigo. 2 linhas no máximo.', date: '1 de novembro de 2026', dateShort: '1 nov 2026', readTime: '5 min de leitura' },
+  9: { cat: 'bases', catLabel: 'Tipos de Base', title: 'Título do artigo sobre bases de prótese', dek: 'Resumo do artigo sobre os tipos diferentes.', date: '28 de outubro de 2026', dateShort: '28 out 2026', readTime: '10 min de leitura' },
+  10: { cat: 'aplicacao', catLabel: 'Aplicação', title: 'Guia técnico de aplicação — passo a passo', dek: 'Resumo do artigo de aplicação.', date: '25 de outubro de 2026', dateShort: '25 out 2026', readTime: '14 min de leitura' },
+  11: { cat: 'barbeiros', catLabel: 'Para Barbeiros', title: 'Outro artigo para barbeiros profissionais', dek: 'Resumo do artigo.', date: '22 de outubro de 2026', dateShort: '22 out 2026', readTime: '8 min de leitura' },
+  12: { cat: 'cliente', catLabel: 'Para Quem Usa', title: 'Mais um artigo para quem vai começar', dek: 'Resumo curto do artigo.', date: '20 de outubro de 2026', dateShort: '20 out 2026', readTime: '6 min de leitura' }
+};
+
+let currentArticleCategory = '';
+let currentFilter = 'all';
+
+// =========================================
+//   RENDERIZAR LISTA DE ARTIGOS
+// =========================================
+function renderArticlesList() {
+  const list = document.getElementById('allArticlesList');
+  const filtered = Object.entries(articles).filter(([id, art]) => {
+    return currentFilter === 'all' || art.cat === currentFilter;
+  });
+
+  document.getElementById('totalArticles').textContent = `${filtered.length} publicaç${filtered.length === 1 ? 'ão' : 'ões'}`;
+
+  list.innerHTML = filtered.map(([id, art]) => `
+    <div class="article-row" onclick="showArticle(${id})">
+      <div class="article-row-img"></div>
+      <div class="article-row-content">
+        <div class="article-row-meta">
+          <span class="cat">${art.catLabel}</span>
+          <span class="sep"></span>
+          <span>${art.dateShort}</span>
+          <span class="sep"></span>
+          <span>${art.readTime.replace(' de leitura','')}</span>
+        </div>
+        <h3>${art.title}</h3>
+        <p>${art.dek}</p>
+      </div>
+      <div class="article-row-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+    </div>
+  `).join('');
+}
+
+// =========================================
+//   FILTRO DE CATEGORIA
+// =========================================
+function filterCategory(cat) {
+  showHome();
+  currentFilter = cat;
+  document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+  const target = document.querySelector(`.cat-pill[data-cat="${cat}"]`) || document.querySelector('.cat-pill[data-cat="all"]');
+  target.classList.add('active');
+  renderArticlesList();
+  setTimeout(() => {
+    document.querySelector('.all-articles-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+
+document.querySelectorAll('.cat-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    currentFilter = pill.dataset.cat;
+    renderArticlesList();
+  });
+});
+
+// =========================================
+//   NAVEGAÇÃO HOME / ARTIGO
+// =========================================
+function showHome() {
+  document.getElementById('homeView').classList.remove('hidden');
+  document.getElementById('articleView').classList.remove('active');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  history.pushState(null, '', '#');
+}
+
+function showArticle(id) {
+  const art = articles[id];
+  if (!art) return;
+
+  currentArticleCategory = art.cat;
+  document.getElementById('articleCategory').textContent = art.catLabel;
+  document.getElementById('articleTitle').textContent = art.title;
+  document.getElementById('articleDek').textContent = art.dek;
+  document.getElementById('articleDate').textContent = art.date;
+  document.getElementById('articleReadTime').textContent = art.readTime;
+  document.getElementById('bcCat').textContent = art.catLabel;
+  document.getElementById('bcTitle').textContent = art.title.length > 50 ? art.title.slice(0, 50) + '…' : art.title;
+
+  // Artigos relacionados
+  let related = Object.entries(articles).filter(([key, val]) => key != id && val.cat === art.cat).slice(0, 3);
+  if (related.length < 3) {
+    const fillers = Object.entries(articles).filter(([key, val]) => key != id && val.cat !== art.cat).slice(0, 3 - related.length);
+    related.push(...fillers);
+  }
+  document.getElementById('relatedGrid').innerHTML = related.map(([key, val]) => `
+    <div class="post-card" onclick="showArticle(${key})">
+      <div class="post-card-img"></div>
+      <div class="post-card-meta">
+        <span class="date">${val.dateShort}</span>
+        <span class="sep"></span>
+        <span class="time">${val.readTime.replace(' de leitura','')}</span>
+      </div>
+      <h3>${val.title}</h3>
+    </div>
+  `).join('');
+
+  document.getElementById('homeView').classList.add('hidden');
+  document.getElementById('articleView').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  history.pushState(null, '', '#artigo-' + id);
+}
+
+// =========================================
+//   MENU MOBILE
+// =========================================
+function toggleMenu() {
+  document.getElementById('navMain').classList.toggle('open');
+}
+
+// =========================================
+//   DEEP LINKING
+// =========================================
+window.addEventListener('load', () => {
+  renderArticlesList();
+  const m = window.location.hash.match(/#artigo-(\d+)/);
+  if (m) showArticle(parseInt(m[1]));
+});
+
+window.addEventListener('popstate', () => {
+  const m = window.location.hash.match(/#artigo-(\d+)/);
+  if (m) showArticle(parseInt(m[1]));
+  else {
+    document.getElementById('homeView').classList.remove('hidden');
+    document.getElementById('articleView').classList.remove('active');
+  }
+});
+</script>
+
+</body>
+</html>
