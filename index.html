@@ -1187,6 +1187,132 @@ img, video { max-width: 100%; display: block; }
 .trending-main { animation: fadeUp 0.7s ease-out both; }
 .trending-side { animation: fadeUp 0.7s ease-out 0.15s both; }
 
+
+/* ============================
+   AVALIAÇÃO GOOGLE
+============================ */
+.google-review-section {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-warm) 100%);
+  padding: 100px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+
+.google-review-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(251, 188, 4, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.google-review-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.google-logo-stylized {
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.google-logo-stylized .g-blue { color: #4285F4; }
+.google-logo-stylized .g-red { color: #EA4335; }
+.google-logo-stylized .g-yellow { color: #FBBC04; }
+.google-logo-stylized .g-green { color: #34A853; }
+
+.google-stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.google-stars svg {
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(0 2px 4px rgba(251, 188, 4, 0.3));
+}
+
+.google-rating-num {
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.google-headline {
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.google-headline em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
+.google-sub {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-mute);
+  margin-bottom: 36px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  transition: all 0.3s;
+}
+
+.google-cta:hover {
+  background: var(--gold-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(142, 111, 46, 0.3);
+}
+
+.google-cta svg { width: 16px; height: 12px; }
+
+@media (max-width: 760px) {
+  .google-review-section { padding: 64px 0; }
+  .google-stars svg { width: 28px; height: 28px; }
+  .google-rating-num { font-size: 48px; }
+  .google-logo-stylized { font-size: 28px; }
+}
+
 /* ============================
    ARTIGO INDIVIDUAL
 ============================ */
@@ -1734,6 +1860,31 @@ img, video { max-width: 100%; display: block; }
       </div>
     </div>
   </section>
+
+  <!-- AVALIAÇÃO GOOGLE -->
+  <section class="google-review-section">
+    <div class="google-review-inner">
+      <div class="google-logo-stylized">
+        <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+      </div>
+      <div class="google-stars">
+        <svg viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      </div>
+      <div class="google-rating-num">5,0</div>
+      <h3 class="google-headline">A empresa mais bem avaliada<br><em>em prótese capilar do Brasil</em></h3>
+      <p class="google-sub">Avaliação máxima no Google. Centenas de clientes profissionais que reconhecem nossa excelência em qualidade, atendimento e entrega.</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=ProHair+Pr%C3%B3tese+Capilar+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank" class="google-cta">
+        Ver avaliações no Google
+        <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6h14M10 1l5 5-5 5"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
 
   <!-- CTA FINAL -->
   <section class="cta-section">
